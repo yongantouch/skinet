@@ -1,7 +1,8 @@
 using System.Reflection;
-using Microsoft.EntityFrameworkCore;
+
 using Core.Entities;
 using System.Linq;
+using Microsoft.EntityFrameworkCore;
 
 namespace Infrastructure.Data
 {
