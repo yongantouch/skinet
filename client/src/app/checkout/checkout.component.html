@@ -19,7 +19,14 @@
             </app-stepper>
         </div>
         <div class="col-4">
-            <app-order-details></app-order-details>
+            <app-order-details
+                *ngIf="(basketTotal$ |async) as basketTotal"
+                [shippingPrice]="basketTotal.shipping"
+                [subTotal]="basketTotal.subtotal"
+                [total]="basketTotal.total"
+            >
+
+            </app-order-details>
         </div>
     </div>
 </div>
