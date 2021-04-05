@@ -30,7 +30,6 @@ export class AccountService {
     
     return this.http.get(this.baseUrl + "account", {headers}).pipe(
       map((user: IUser) =>{
-        console.log(user);
         if(user){
           localStorage.setItem("token", user.token);
           

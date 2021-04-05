@@ -31,7 +31,7 @@
                                     <a routerLink="/shop/{{item.id}}" 
                                     class="text-dark">{{item.productName}}</a>
                                </h5>
-                               <span class="text-muted font-weight-normal font-italic d-inline-block">
+                               <span *ngIf="!isOrder" class="text-muted font-weight-normal font-italic d-inline-block">
                                    Type:{{item.type}}
                                </span>
                            </div>

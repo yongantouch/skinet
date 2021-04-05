@@ -1,13 +1,14 @@
 <Project Sdk="Microsoft.NET.Sdk">
   <ItemGroup>
-    <PackageReference Include="Microsoft.AspNetCore.Identity" Version="2.2.0" />
-    <PackageReference Include="Microsoft.EntityFrameworkCore.Sqlite" Version="5.0.4" />
-    <PackageReference Include="Microsoft.IdentityModel.Tokens" Version="6.9.0" />
-    <PackageReference Include="StackExchange.Redis" Version="2.2.11" />
-    <PackageReference Include="System.IdentityModel.Tokens.Jwt" Version="6.9.0" />
+    <PackageReference Include="Microsoft.AspNetCore.Identity" Version="2.2.0"/>
+    <PackageReference Include="Microsoft.EntityFrameworkCore.Sqlite" Version="5.0.4"/>
+    <PackageReference Include="Microsoft.IdentityModel.Tokens" Version="6.9.0"/>
+    <PackageReference Include="StackExchange.Redis" Version="2.2.11"/>
+    <PackageReference Include="System.IdentityModel.Tokens.Jwt" Version="6.9.0"/>
+    <PackageReference Include="Stripe.net" Version="39.43.0"/>
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\Core\Core.csproj" />
+    <ProjectReference Include="..\Core\Core.csproj"/>
   </ItemGroup>
   <PropertyGroup>
     <TargetFramework>netstandard2.1</TargetFramework>
